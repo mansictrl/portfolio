@@ -128,3 +128,178 @@
   </script>
 </body>
 </html>
+
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #283593;
+  flex-wrap: wrap;
+  transition: background-color 0.3s ease;
+}
+
+nav a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1a237e;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Section control */
+section {
+  display: none;
+  animation: fadeIn 1s ease-in-out;
+}
+
+section.active {
+  display: block;
+}
+
+/* Project section styling */
+.project {
+  background-color: white;
+  border-left: 5px solid #3f51b5;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, button {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a237e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #3f51b5;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Dark Mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+header.dark-mode {
+  background-color: #1e1e1e;
+}
+
+nav.dark-mode {
+  background-color: #212121;
+}
+
+.project.dark-mode {
+  background-color: #2c2c2c;
+  border-left: 5px solid #3f51b5;
+}
+
+footer.dark-mode {
+  background-color: #1e1e1e;
+}
+
+/* Dark Mode Button */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #1a237e;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
